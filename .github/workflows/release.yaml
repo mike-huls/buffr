@@ -225,9 +225,11 @@ jobs:
 
     - name: Push coverage to codecov
       run: |
-        codecov -t "${{ secrets.CODECOV_TOKEN }}"
+        codecov -t "${{ secrets.CODECOV_TOKEN }}" --branch "$BRANCH_NAME"
 
-  build:
+
+  build_and_publish:
+    needs: unittest
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -248,7 +250,7 @@ jobs:
 
     - name: Build package
       run: |
-        uv publish -t "${{ secrets.PYPI_SECRET }}"
+        uv publish -t "${{ secrets.PYPI_TOKEN }}"
 
 #    - name: Archive package
 #      uses: actions/upload-artifact@v2
