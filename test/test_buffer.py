@@ -16,7 +16,8 @@ def test_can_read_buffer_size():
 
 
 """
-python -m  coverage run -m pytest
+uv run coverage run --omit="test/*" -m pytest
+python -m coverage run --omit="test/*" -m pytest 
 coverage html
 start chrome %cd%/htmlcov/index.html
 """

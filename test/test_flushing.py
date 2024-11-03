@@ -41,7 +41,7 @@ if __name__ == "__main__":
     test_buffer_flushes_when_expired()
 
 """
-python -m  coverage run -m pytest
+python -m  coverage run --omit="test/*" -m pytest 
 coverage html
 start chrome %cd%/htmlcov/index.html
 """

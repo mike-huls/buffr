@@ -198,6 +198,35 @@ on:
 
 
 jobs:
+  unittest:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up python 3.9
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        python -m pip install uv codecov pytest
+        uv sync
+
+    - name: Run unit test
+      run: |
+        uv run coverage run --omit="test/*" -m pytest
+
+    - name: Create coverage
+      run: |
+        uv run coverage report
+        uv run coverage xml
+
+    - name: Push coverage to codecov
+      run: |
+        codecov -t "${{ secrets.CODECOV_TOKEN }}"
+
   build:
     runs-on: ubuntu-latest
     steps:
@@ -210,26 +239,8 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        python -m pip install uv codecov
+        python -m pip install uv
         uv sync
-
-    - name: Unit tests, coverage and codecov
-      run: |
-        python -m pip install uv codecov
-        uv sync
-
-        python -m  coverage run -m pytest
-        coverage run -m unittest
-        coverage html
-        coverage xml
-        codecov -t "${{ secrets.CODECOV_TOKEN }}"
-        
-
-#    - name: Archive code coverage html report
-#      uses: actions/upload-artifact@v2
-#      with:
-#        name: code-coverage-report
-#        path: src/htmlcov
 
     - name: Build package
       run: |

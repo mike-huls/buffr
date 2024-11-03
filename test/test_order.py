@@ -30,7 +30,7 @@ def test_lifo_works():
     assert [2, 1, 0] == result #should be a list thats ordered lifo
 
 """
-python -m  coverage run -m pytest
+python -m  coverage run --omit="test/*" -m pytest 
 coverage html
 start chrome %cd%/htmlcov/index.html
 """
