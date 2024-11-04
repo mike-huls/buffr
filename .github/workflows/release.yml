@@ -63,9 +63,9 @@ jobs:
       run: |
         uv build
 
-    - name: Build package
+    - name: Publish package
       run: |
-        uv publish -t "${{ secrets.PYPI_SECRET }}"
+        uv publish -t "${{ secrets.PYPI_TOKEN }}"
 
 
   github_release:
