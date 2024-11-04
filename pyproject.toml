@@ -1,6 +1,6 @@
 [project]
 name = "buffr"
-version = "0.0.1"
+version = "0.0.2"
 description = "Collect objects and apply a function once the buffer is full or expired"
 authors = [{ name = "Mike Huls", email = "mikehuls42@gmail.com" }]
 license = { file = "LICENSE" }
