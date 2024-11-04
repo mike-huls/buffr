@@ -8,7 +8,7 @@ readme = "README.md"
 requires-python = ">=3.9"
 dependencies = []
 keywords = [
-  "uv", "requirements", "packaging"
+  "buffer", "buffering"
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -32,6 +32,14 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
 ]
 
+[project.urls]
+"Homepage" = "https://github.com/mike-huls/cachr"
+"Bug Tracker" = "https://github.com/mike-huls/cachr/issues"
+"Documentation" = "https://github.com/mike-huls/cachr/blob/master/README.md/"
+"Changelog" = "https://github.com/mike-huls/cachr/blob/master/CHANGELOG.md/"
+"Source" = "https://github.com/mike-huls/cachr/"
+"Say Thanks!" = "https://www.buymeacoffee.com/mikehuls"
+
 [tool.uv]
 dev-dependencies = [
     "coverage>=7.6.4",
@@ -41,13 +49,3 @@ dev-dependencies = [
 
 [tool.setuptools]
 license-files = ["LICENSE"]
-
-
-
-[project.urls]
-"Homepage" = "https://github.com/mike-huls/cachr"
-"Bug Tracker" = "https://github.com/mike-huls/cachr/issues"
-"Documentation" = "https://github.com/mike-huls/cachr/blob/master/README.md/"
-"Changelog" = "https://github.com/mike-huls/cachr/blob/master/CHANGELOG.md/"
-"Source" = "https://github.com/mike-huls/cachr/"
-"Say Thanks!" = "https://www.buymeacoffee.com/mikehuls"

@@ -5,15 +5,16 @@
 /____/\____/_/ /_/ /_/|_| 
 ```
 
-*buffr: simple buffering mechanism for Python*
-<br>
-
 ![coverage](https://img.shields.io/codecov/c/github/mike-huls/buffr)
 ![Tests](https://github.com/mike-huls/buffr/actions/workflows/tests.yml/badge.svg)
 ![version](https://img.shields.io/pypi/v/buffr?color=%2334D058&label=pypi%20package)
 ![dependencies](https://img.shields.io/librariesio/release/pypi/buffr)
 ![PyPI Downloads](https://img.shields.io/pypi/dm/buffr.svg?label=PyPI%20downloads)
 ![versions](https://img.shields.io/pypi/pyversions/buffr.svg?color=%2334D058)
+<br>
+![tweet](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fmike-huls%2Fcythonbuilder) ![xfollow](https://img.shields.io/twitter/follow/mike_huls?style=social) 
+
+# buffr: simple buffering mechanism for Python
 
 [//]: # (|         |                                                                                                                                                                                                                                                                                                                                                               |)
 
