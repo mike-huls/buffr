@@ -9,16 +9,25 @@
 <br>
 
 ![coverage](https://img.shields.io/codecov/c/github/mike-huls/buffr)
-![Build](https://github.com/mike-huls/buffr/actions/workflows/release.yml/badge.svg)
+![Tests](https://github.com/mike-huls/buffr/actions/workflows/tests.yml/badge.svg)
+![version](https://img.shields.io/pypi/v/buffr?color=%2334D058&label=pypi%20package)
+![dependencies](https://img.shields.io/librariesio/release/pypi/buffr)
+![PyPI Downloads](https://img.shields.io/pypi/dm/buffr.svg?label=PyPI%20downloads)
+![versions](https://img.shields.io/pypi/pyversions/buffr.svg?color=%2334D058)
 
+[//]: # (|         |                                                                                                                                                                                                                                                                                                                                                               |)
 
-|         |                                                                                                                                                                                                                                                                                                                                                               |
-|---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Testing | ![coverage](https://img.shields.io/codecov/c/github/mike-huls/buffr)                                                                                                                                                                                                                                                                                          |
-| Build   | ![Build](https://github.com/mike-huls/buffr/actions/workflows/release.yml/badge.svg)                                                                                                                                                                                                                                                                          |
-| Package | [![PyPI Latest Release](https://img.shields.io/pypi/v/buffr.svg)](https://pypi.org/project/buffr/) [![PyPI Downloads](https://img.shields.io/pypi/dm/buffr.svg?label=PyPI%20downloads)](https://pypistats.org/packages/buffr) <br/>![status](https://img.shields.io/pypi/status/buffr) ![dependencies](https://img.shields.io/librariesio/release/pypi/buffr) |
-| Meta    | ![GitHub License](https://img.shields.io/github/license/mike-huls/buffr) ![implementation](https://img.shields.io/pypi/implementation/buffr)  ![versions](https://img.shields.io/pypi/pyversions/buffr)                                                                                                                                                       |
-| Social  | ![tweet](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fmike-huls%2Fbuffr) ![xfollow](https://img.shields.io/twitter/follow/mike_huls?style=social)                                                                                                                                                                           | 
+[//]: # (|---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|)
+
+[//]: # (| Testing | ![coverage]&#40;https://img.shields.io/codecov/c/github/mike-huls/buffr&#41;                                                                                                                                                                                                                                                                                          |)
+
+[//]: # (| Build   | ![Build]&#40;https://github.com/mike-huls/buffr/actions/workflows/release.yml/badge.svg&#41;                                                                                                                                                                                                                                                                          |)
+
+[//]: # (| Package | [![PyPI Downloads]&#40;https://img.shields.io/pypi/dm/buffr.svg?label=PyPI%20downloads&#41;]&#40;https://pypistats.org/packages/buffr&#41; <br/>![status]&#40;https://img.shields.io/pypi/status/buffr&#41; ![dependencies]&#40;https://img.shields.io/librariesio/release/pypi/buffr&#41; |)
+
+[//]: # (| Meta    | ![GitHub License]&#40;https://img.shields.io/github/license/mike-huls/buffr&#41; ![implementation]&#40;https://img.shields.io/pypi/implementation/buffr&#41;  ![versions]&#40;https://img.shields.io/pypi/pyversions/buffr&#41;                                                                                                                                                       |)
+
+[//]: # (| Social  | ![tweet]&#40;https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fmike-huls%2Fbuffr&#41; ![xfollow]&#40;https://img.shields.io/twitter/follow/mike_huls?style=social&#41;                                                                                                                                                                           | )
 
 **buffr** provides a simple mechanism that allows you to collect values in a buffer. 
 Once a certain time has passed or the buffer's capacity is reached, all values will pe processed with the provided function.
@@ -40,7 +49,7 @@ pip install buffr
 
 ## Main Features
 - 🐍 Pure Python
-- 🖌 Eadily configurable
+- 🖌 Easily configurable
 - 👨‍🎨 User-friendly
 
 ## Use case
