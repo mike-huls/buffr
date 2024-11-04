@@ -39,7 +39,8 @@ jobs:
 
     - name: Push coverage to codecov
       run: |
-        codecov -t "${{ secrets.CODECOV_TOKEN }}" --commit="${GITHUB_SHA}" --branch="master"
+        codecov -t "${{ secrets.CODECOV_TOKEN }}" --commit="${GITHUB_SHA}" --branch="${GITHUB_REF_NAME}"
+
 
 
 
