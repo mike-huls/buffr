@@ -46,6 +46,7 @@ This reduces the number of costly database-operations from 60 per minute to just
 ## Usage Example
 Creating a Buffr is easy.
 ```python
+from typing import List
 from buffr import Buffr
 
 # Define the processor
