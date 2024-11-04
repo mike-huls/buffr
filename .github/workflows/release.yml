@@ -184,6 +184,9 @@
 # GitHub CI build pipeline
 name: Release
 
+env:
+  BRANCH_NAME: ${{ github.event_name == 'pull_request' && github.head_ref || github.ref_name }}
+
 on:
   push:
     branches:
@@ -250,7 +253,7 @@ jobs:
 
     - name: Build package
       run: |
-        uv publish -t "${{ secrets.PYPI_TOKEN }}"
+        uv publish 
 
 #    - name: Archive package
 #      uses: actions/upload-artifact@v2
